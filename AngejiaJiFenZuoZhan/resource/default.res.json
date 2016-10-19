@@ -1,11 +1,46 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json",
+			"keys": "bg_game,prize_1,prize_2,prize_3,prize_4,prize_5,checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json",
 			"name": "preload"
 		}
 	],
 	"resources": [
+		{
+			"url": "assets/bg_game.png",
+			"type": "image",
+			"name": "bg_game"
+		},
+		
+		{
+			"url": "assets/CheckBox/checkbox_select_disabled.png",
+			"type": "image",
+			"name": "prize_1"
+		},
+		{
+			"url": "assets/egret_icon.png",
+			"type": "image",
+			"name": "prize_2"
+		},
+		{
+			"url": "assets/egret_icon.png",
+			"type": "image",
+			"name": "prize_3"
+		},
+		{
+			"url": "assets/egret_icon.png",
+			"type": "image",
+			"name": "prize_4"
+		},{
+			"url": "assets/egret_icon.png",
+			"type": "image",
+			"name": "prize_5"
+		},
+		{
+			"url": "assets/egret_icon.png",
+			"type": "image",
+			"name": "prize_6"
+		},
 		{
 			"url": "assets/CheckBox/checkbox_select_disabled.png",
 			"type": "image",

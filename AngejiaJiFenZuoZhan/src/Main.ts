@@ -33,6 +33,7 @@ class Main extends eui.UILayer {
      * loading process interface
      */
     private loadingView: LoadingUI;
+    private scoreIndicator: ScoreIndicator;
     protected createChildren(): void {
         super.createChildren();
         //inject the custom material parser
@@ -48,6 +49,10 @@ class Main extends eui.UILayer {
         //初始化Resource资源加载库
         RES.addEventListener(RES.ResourceEvent.CONFIG_COMPLETE, this.onConfigComplete, this);
         RES.loadConfig("resource/default.res.json", "resource/");
+
+        var scoreIndicator = new ScoreIndicator();
+        this.scoreIndicator = scoreIndicator;
+        this.stage.addChild(this.scoreIndicator);
     }
     /**
      * 配置文件加载完成,开始预加载皮肤主题资源和preload资源组。
@@ -129,7 +134,7 @@ class Main extends eui.UILayer {
      * Create scene interface
      */
     protected startCreateScene(): void {
-        var sky:egret.Bitmap = this.createBitmapByName("bg_jpg");
+        var sky:egret.Bitmap = this.createBitmapByName("bg_game");
         this.addChild(sky);
         var stageW:number = this.stage.stageWidth;
         var stageH:number = this.stage.stageHeight;
